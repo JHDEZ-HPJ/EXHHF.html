@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background-color: #282828;
+}
+
+.container{
+    width: 100%;
+    max-width: 1700px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* Nav */
+
+#sidebar {
+    display: flex;
+    background-color: #33B3FF;
+    height: 60px;
+    border: 5px solid #0085D4;
+  }
+  
+.logo{
+    width: 250px;
+    margin-top: 10px;
+}
+
+.l{
+    margin-left: 40px;
+    font-size: 25px;
+    color: #E2E2E2;
+    text-decoration: none;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.l:hover{
+    color: #fff;
+    border-bottom: 2px solid #FFF;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #2E2EFE;
+    /* fallback for old browsers */
+    background: url(../img/bg.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url(../img/bg.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    margin-top: 40px;
+}
+
+.tittle{
+    font-size: 70px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    color: orange;
+}
+
+.copy{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Adaptations */
+
+@media screen and (max-width:1220px){
+    .widgets{
+        width: 350px;
+    }
+    .dc{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1170px){
+    .widgets{
+        width: 300px;
+    }
+    .dc{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1118px){
+    .server{
+        width: 250px;
+    }
+    .dc{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:1066px){
+    .server{
+        width: 200px;
+    }
+    .widgets{
+        width: 250px;
+    }
+    .dc{
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:1015px){
+    .qs > h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .qs > p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .qs{
+        height: 150px;
+    }
+    .nvd > h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .nvd > p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .nvd{
+        height: 150px;
+    }
+    .nrm > h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .nrm > p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .nrm{
+        height: 150px;
+    }
+    .widgets{
+        height: 450px;
+    }
+    .state{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:947px){
+    .qs > h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .qs > p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .qs{
+        height: 150px;
+    }
+    .nvd > h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .nvd > p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .nvd{
+        height: 150px;
+    }
+    .nrm > h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .nrm > p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .nrm{
+        height: 150px;
+    }
+    .widgets{
+        height: 450px;
+    }
+    .state{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:874px){
+    .qs > h2{
+        text-align: center;
+        font-size: 19px;
+    }
+    
+    .qs > p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .qs{
+        height: 150px;
+    }
+    .nvd > h2{
+        text-align: center;
+        font-size: 19px;
+    }
+    
+    .nvd > p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .nvd{
+        height: 150px;
+    }
+    .nrm > h2{
+        text-align: center;
+        font-size: 19px;
+    }
+    
+    .nrm > p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .nrm{
+        height: 150px;
+    }
+    .widgets{
+        height: 450px;
+    }
+    .state{
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .content-foo p{
+        font-size: 10px;
+    }
+    .content-foo h4{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .content-foo p{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:560px){
+    .l{
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .l{
+    font-size: 15px;
+    }
+}
+
+@media screen and (max-width:658px){
+    .widgets{
+        float: none;
+        margin: auto;
+        width: 400px;
+        height: 450px;
+    }
+    .dc{
+        width: 300px;
+    }
+    .server{
+        width: 300px;
+    }
+    .contents-t{
+        flex-direction: column;
+    }
+    .widgets{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:455px){
+    header{
+        background-position: center;
+    }    
+    .widgets{
+        width: 350px;
+    }
+    .state{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:455px){
+    .qs > h2{
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    .qs > p{
+        text-align: center;
+        font-size: 13px;
+    }
+    .qs{
+        height: 150px;
+    }
+}
+@media screen and (max-width:344px){
+    .qs > h2{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .qs > p{
+        text-align: center;
+        font-size: 11px;
+    }
+    .qs{
+        height: 150px;
+    }
+}
